@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+* {
+    font-family:'PT Sans', sans-serif;
+}
+.header-wrapper {
+    width: 100%;
+    margin: 0 -999px;
+    padding: 25px 999px 30px;
+    z-index: 100;
+    background: #6660A9;
+    position: relative;
+    box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
+    -moz-box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
+    -webkit-box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
+}
+.clearfix {
+    *display: inline-block;
+    height: 1%;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+ 
+.logo-default {
+    float: left;
+}
+ 
+.logo-text {
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 30px;
+    padding: 6px 0 0 15px;
+}
+ 
+.logo-text a {
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+ 
+.logo-text span {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #18BDCE;
+}
+ 
+ 
+.top-bar {
+    float: right;
+    margin: 13px 0 0;
+}
+ 
+.menu-wrap {
+    float: right;
+    position: relative;
+}
+ 
+.main-nav, .main-nav ul {
+    margin: 1rem;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    position: relative;
+}
+ 
+.main-nav {
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+ol, ul {
+    list-style: none;
+}
+ 
+.main-nav li {
+    float: left;
+    position: relative;
+}
+ 
+.main-nav>li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+.main-nav .current-menu-item a {
+    font-weight: 900;
+    color: #b4c9dc;
+}
+.main-nav a:first-child {
+    padding-left: 0;
+}
+.main-nav a {
+    color: #FFF;
+    float: left;
+    padding: 5px 25px;
+    display: block;
+    font-family: 'Open Sans',Georgia,serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}

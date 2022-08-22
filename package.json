@@ -1,0 +1,41 @@
+{
+  "name": "building-blocks-for-kids-golf-outing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "building-blocks-for-kids-golf-outing",
+  "author": "bb3ry",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.1.3",
+    "@react-icons/all-files": "^4.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^4.21.0",
+    "gatsby-background-image": "^1.6.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-image": "^2.21.0",
+    "gatsby-plugin-manifest": "^4.21.0",
+    "gatsby-plugin-mdx": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^5.21.0",
+    "gatsby-plugin-sass": "^5.21.0",
+    "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-plugin-styled-components": "^5.21.0",
+    "gatsby-source-contentful": "^7.19.0",
+    "gatsby-source-filesystem": "^4.21.0",
+    "gatsby-transformer-sharp": "^4.21.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-hook-form": "^7.34.2",
+    "react-icons": "^4.4.0",
+    "sass": "^1.54.4",
+    "styled-components": "^5.3.5"
+  }
+}
