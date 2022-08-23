@@ -32,15 +32,15 @@ const Navbar = () => {
                 <Nav active={scroll} click={click}>
                     <NavbarContainer>
                         <NavLogo to="/">
-                            <StaticImage objectFit="contain" src="../../images/logo.png" />
+                            <StaticImage objectFit="contain" src="../../images/logo.png" alt="Building Blocks for Kids" />
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes color="#6660A9" /> : <FaBars color="#6660A9" />}
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             {menuData.map((item, index) => (
-                                <NavItem>
-                                    <NavLink to={item.link} key={index}>
+                                <NavItem key={index}>
+                                    <NavLink to={item.link}>
                                         {item.title}
                                     </NavLink>
                                 </NavItem>

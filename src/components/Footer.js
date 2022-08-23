@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <FooterContainer>
 
-                <FooterDesc>
-                    <h1>Building Blocks for Kids</h1>
-                    <p>Funding Needs. Improving Lives.</p>
-                </FooterDesc>
-                <br />
+            <FooterDesc>
+                <h1>Building Blocks for Kids</h1>
+                <p>Funding Needs. Improving Lives.</p>
+            </FooterDesc>
+            <br />
 
             <FooterLinksWrap>
                 <FooterLinkItems>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </FooterLinkItems>
                 <FooterLinkItems>
                     <FooterLinkTitle>Visit our site</FooterLinkTitle>
-                    <FooterLink to="https://bb4k.org/">Building Blocks for Kids</FooterLink>
+                    <a href="https://bb4k.org/" target="_blank" rel="noreferrer">Building Blocks for Kids</a>
                 </FooterLinkItems>
             </FooterLinksWrap>
         </FooterContainer>
@@ -83,7 +83,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 1rem 2rem;
-
+a {
+    text-decoration: none;
+margin-bottom: 0.5rem;
+font-size: 14px;
+color: #6660A9;
+}
 @media screen and (max-width: 400px){
     padding: 1rem;
 }
@@ -104,5 +109,6 @@ color: #6660A9;
     color: #f26a2e;
     transition: 0.3s ease-out;
 }
+
 `
 
