@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Button } from './Button'
 import EmailBg from '../images/email.jpg'
 import { ErrorMessage } from '@hookform/error-message';
+import { navigate } from "gatsby"
 const Email2 = () => {
     const setSubmitted = useState(false);
     const postUrl = 'https://getform.io/f/2f3ec835-4524-4afc-90e9-69736f7f95ac';
@@ -28,6 +29,7 @@ const Email2 = () => {
         }
         finally {
             alert("You have reserved your spot.");
+            navigate("/");
         }
     };
 
