@@ -165,7 +165,7 @@ input[type=text], input[type=email] {
     margin-right: 1rem;
 }
 span {
-    color: #ad3181;
+    color: #43B54C;
     font-size:12px;
     font-weight:bold;
   }
