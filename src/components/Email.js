@@ -9,8 +9,8 @@ const Email = () => {
             <EmailContent>
                 <h1>Register to golf with us</h1>
                 <p>Sign up to reserve a tee-time</p>
-                                    <FormWrap>
-                                    <form id="signup" enctype="multipart/form-data" action="https://getform.io/f/2f3ec835-4524-4afc-90e9-69736f7f95ac" method="POST">
+                <form id="signup" enctype="multipart/form-data" action="https://getform.io/f/2f3ec835-4524-4afc-90e9-69736f7f95ac" method="POST">
+                    <FormWrap>
                         <label htmlFor="name">
                             <input required type="text" pattern="[a-zA-Z ]*" name="name" placeholder="Your Full Name" id="name" />
                         </label>
@@ -37,6 +37,7 @@ const Email = () => {
                         <label htmlFor="XL">
                             <input type="radio" name="shirt" value="XL" id="XL" />
                             : XL</label>
+                            
 
 
 
@@ -44,6 +45,7 @@ const Email = () => {
                         height:35px;
                         margin-top: 1rem;
                         margin-left: 1rem;
+                        padding: 0;
                         @media screen and (max-width: 768px){
                             margin-top: 0.3rem;
                             width:100%;
@@ -55,8 +57,8 @@ const Email = () => {
                             margin-left: 0;
                         }
                         `}>Sign Up</Button>
-                    
-                </form></FormWrap>
+                    </FormWrap>
+                </form>
             </EmailContent>
         </EmailContainer>
     )
@@ -85,7 +87,7 @@ align-items: center;
 h1 {
     text-align:center;
     margin-bottom: 1rem;
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: clamp(1.75rem, 5vw, 3rem);
     padding-top: 1rem;
 }
 
@@ -102,14 +104,12 @@ form {
 `
 
 const FormWrap = styled.div`
-text-align: center;
-width: 100%;
 input[type=text], input[type=email] {
     padding: 1rem 1.5rem;
     margin-top: 0.5rem;
     outline: none;
+
     width: 100%;
-    max-width: 350px;
     height: 24px;
     border-radius: 15px;
     border: none;
@@ -128,8 +128,8 @@ input[type=number] {
     margin-top: 0.5rem;
     color: black;
     outline: none;
+
     width: 100%;
-    max-width: 350px;
     height: 24px;
     border-radius: 15px;
     border: none;
@@ -138,11 +138,10 @@ input[type=number] {
 label { 
     font-size: 12px;
     font-weight: 700;
-margin: 0 auto; }
+margin: 0 auto;
+width:100%; }
 
 @media screen and (max-width:768px){
-    display:flex;
-    flex-direction:column;
     padding: 0 1rem;
 }
 `

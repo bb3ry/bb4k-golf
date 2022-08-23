@@ -60,6 +60,7 @@ export default GoodieBag
 
 const GoodieBagContainer = styled.div`
 min-height: 100vh;
+width:100%;
 padding: 5rem calc((100vw - 1300px) / 2);
 color: #FFF;
 background-color: #6660A9;
