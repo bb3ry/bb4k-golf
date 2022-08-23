@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components'
 import { Button } from './Button'
 import EmailBg from '../images/email.jpg'
 import { ErrorMessage } from '@hookform/error-message';
 import { navigate } from "gatsby"
+import toast, { Toaster } from 'react-hot-toast'
 const Email2 = () => {
     const postUrl = 'https://getform.io/f/2f3ec835-4524-4afc-90e9-69736f7f95ac';
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -21,8 +22,14 @@ const Email2 = () => {
 
             }).then((response)=>{
                 if(response.status===200){
-                    alert("You have reserved your spot.");
-                    navigate("/");
+                    toast.success('Successfully Registered!', {
+                        duration: 4000,
+                        position: 'top-center',
+                        style: {
+                            background: '#6660A9',
+                            color: 'white',
+                          },});
+                    setTimeout(navigate("/"), 7);
           }
                 
                   else{
@@ -41,12 +48,16 @@ const Email2 = () => {
 
     return (
         <EmailContainer>
+            <Toaster/>
             <EmailContent>
                 <h1>Register to golf with us</h1>
                 <p>Sign up to reserve a tee-time</p>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <FormWrap>
-                        <input type="text" placeholder="Full Name" {...register("Full Name", { required: "Name required.", maxLength: 80 })} />
+                        <input type="text" placeholder="Full Name" {...register("Full Name", { required: "Name required.",minLength: {
+                                value: 5,
+                                message: "Enter Full Name (Minimum:5)"
+                            }, maxLength: 80 })} />
                         <ErrorMessage
                             errors={errors}
                             name="Full Name"
@@ -162,6 +173,7 @@ const FormWrap = styled.div`
 input[type=text], input[type=email] {
     padding: 1rem 1.5rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
     outline: none;
     max-width: 350px;
     width: 100%;
@@ -182,7 +194,7 @@ span {
 select {
     padding-left: 1.2rem; 
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     max-width: 350px;
     width: 100%;
     height: 32px;
@@ -195,6 +207,7 @@ select {
 input[type=number] {
     padding: 1rem 1.5rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
     color: black;
     outline: none;
     max-width: 350px;
