@@ -20,7 +20,7 @@ query {
         <>
             <CourseBox>
                 <Heading><GiGolfFlag color="#6660A9" /> Map of {data.contentfulGolfCourseMap.courseName}</Heading>
-                <GatsbyImage image={image} alt={data.contentfulGolfCourseMap.courseName} />
+                <Course image={image} alt={data.contentfulGolfCourseMap.courseName} />
             </CourseBox>
         </>
 
@@ -30,12 +30,11 @@ export default Coursemap
 const CourseBox = styled.div`
 margin: 0 auto;
 width:100%;
-padding-left:10rem;
-padding-right:10rem;
-@media screen and (max-width: 960px){
-    padding-left:5rem;
+max-width:55rem;
+margin-top: 1.5rem;
+margin-bottom: 2rem;
+padding-left:5rem;
 padding-right:5rem;
-}
 @media screen and (max-width: 600px){
     padding-left:2rem;
 padding-right:2rem;
@@ -47,5 +46,12 @@ font-size: clamp(1.5rem, 5vw, 2rem);
 margin-bottom: 1rem;
 padding: 1rem 1rem;
 color: #6660A9;	 
+`
+const Course = styled(GatsbyImage)`
+-webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+-moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+border-radius:15px;
+
 `
 

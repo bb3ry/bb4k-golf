@@ -120,6 +120,9 @@ color: #fff;
 display:flex;
 justify-content: center;
 align-items: center;
+-webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+-moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
 `
 
 const EmailContent = styled.div`

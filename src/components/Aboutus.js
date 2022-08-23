@@ -44,7 +44,6 @@ export default Aboutus
 
 const AboutContainer = styled.div`
 width: 100%;
-background: #fff;
 color: #000;
 display: flex;
 flex-direction: column;

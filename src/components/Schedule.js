@@ -51,11 +51,11 @@ export default Schedule
 
 const ScheduleContainer = styled.div`
 border-radius: 4px;
-background: white;
 border-bottom: 3px solid darken(#2D3134, 15%);
 margin: 0 auto;
 padding-top: 1rem;
 width: 90%;
+margin-top: 1.5rem;
 margin-bottom: 20px;
 max-width:100%;
 `

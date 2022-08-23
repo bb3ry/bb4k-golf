@@ -12,9 +12,11 @@ export const Nav = styled.nav`
  position: sticky;
  top: 0;
  z-index: 999;
-
+ -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
  @media screen and (max-width: 960px){
-    background: white;
+    background: rgb(240, 240, 240);
     transition: 0.8s all ease;
  }
 `
@@ -60,7 +62,7 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
-
+background: rgb(240, 240, 240);
 @media screen and (max-width: 960px){
     display:flex;
     flex-direction: column;
@@ -70,7 +72,7 @@ text-align: center;
     top:${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     transition: all 0.2s ease;
-    background: #fff;
+
 }
 `
 export const NavItem = styled.li`

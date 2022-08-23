@@ -30,7 +30,9 @@ padding 0 1rem;
 position: relative;
 margin-top: -80px;
 color: #FFF;
-
+-webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+-moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
 :before {
     content: "";
     position: absolute;

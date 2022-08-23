@@ -59,11 +59,14 @@ query giftQuery {
 export default GoodieBag
 
 const GoodieBagContainer = styled.div`
-min-height: 100vh;
+min-height: 95vh;
 width:100%;
-padding: 5rem calc((100vw - 1300px) / 2);
+padding: 2rem calc((100vw - 1300px) / 2);
 color: #FFF;
 background-color: #6660A9;
+-webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+	   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+	        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
 `
 const GoodieBagHeading = styled.h1`
 

@@ -18,8 +18,8 @@ const IndexPage = ({ data }) => {
       <GoodieBag heading="Complimentary Goodie Bags" subHeading="Everyone who participates will receive these awesome gifts!" />
       <Schedule heading="Schedule" />
       <Coursemap />
-      <Aboutus />
       <Email />
+      <Aboutus />
     </Layout>
   )
 }
